@@ -1,2 +1,24 @@
-repo:
-  - any: ['./*', './src/**']
+autolabeler:
+- label: 'chore'
+  files:
+    - '*.yml'
+    - '*.conf'
+    - '*.sbt'
+  branch:
+    - '/chore\/.+/'
+- label: 'bug'
+  branch:
+    - '/fix\/.+/'
+  title:
+    - '/fix/i'
+- label: 'enhancement'
+  branch:
+    - '/feat\/.+/'
+    - '/refactor\/.+/'
+- label: 'docs'
+  files:
+    - '*.md'
+    - '*.txt'
+  branch:
+    - '/doc\/.+/'
+    - '/docs\/.+/'
