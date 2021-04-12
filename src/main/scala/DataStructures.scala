@@ -39,7 +39,7 @@ object MyList {
       case Cons(h, t) => f(h, foldRight(t, f(h, z))(f))
     }
   }
-  
+
   def foldLeft[A, B](l: MyList[A], z: B)(f: (B, A) => B): B = {
     l match {
       case Nil => z
