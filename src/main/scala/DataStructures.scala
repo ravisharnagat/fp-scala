@@ -51,8 +51,6 @@ object MyList {
     foldLeft(l, MyList[A]())((acc, h) => Cons(h, acc))
   }
 
-
-
   //Ex15
   def concat[A](l: MyList[MyList[A]]): MyList[A] =
     foldRight(l, Nil: MyList[A])(append)
