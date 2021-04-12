@@ -2,5 +2,3 @@ chore:
   - '*.yml'
   - '*.conf'
   - '*.sbt'
-feature: ['feature/*', 'feat/*']
-fix: 'fix/*'
