@@ -67,13 +67,6 @@ object MyList {
     foldRight(l, MyList[B]())((h, t) => Cons(f(h), t))
   }
 
-  def map[A, B](l: MyList[A])(f: A => B): MyList[B] = {
-    l match {
-      case Nil => ()
-      case Cons(h, t) =>
-    }
-  }
-
 
   //MAP AND FLATMAP
   def append[A](a1: MyList[A], a2: MyList[A]): MyList[A] = {
