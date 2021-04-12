@@ -22,6 +22,10 @@ autolabeler:
     branch:
       - '/doc\/.+/'
       - '/docs\/.+/'
+  - label: 'automerge'
+    branch:
+      - '/update\/.+/'
+      - '/updates\/.+/'
 
 
 
