@@ -57,6 +57,13 @@ autolabeler:
     branch:
       - '/update\/.+/'
       - '/updates\/.+/'
+  - label: 'test'
+    branch:
+      - '/test\/.+/'
+      - '/tests\/.+/'
+    files:
+      - 'src/test/**/*'
+      - '*.txt'
 
 
 
